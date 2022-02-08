@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Web Pigeon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400&display=swap" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Bree Serif' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a><span>W</span>eb <span>P</span>igeon</a>
+            </div>
+            <div class="links">
+                <div>
+                    <a class="link" href="index.html"><i class="fa fa-home"></i> Home</a>
+                    <a class="link" href="search.html"><i class="fa fa-search"></i> Search</a>
+                    <a class="link active" href="profile.html"><i class="fa fa-user"></i> Profile</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container profile">
+        <section class="user-data">
+            <div class="img-container">
+                <div class="cover"></div>
+                <img src="https://via.placeholder.com/400x400.png">
+            </div>
+            <div class="text-container">
+                <div>
+                    <h1>Ahmed Saber</h1>
+                    <p>Hello, I'm using Web Pigeon</p>
+                </div>
+                <div class="profile-btns">
+                    <a href="#">Edit Profile</a>
+                    <a href="#">Log out</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="messages">
+            <h2>5 Messages Recieved</h2>
+            <section class="rec-or-fav">
+                <button onclick="show_rec()">Recieved</button>
+                <button onclick="show_fav()">Favourite</button>
+            </section>
+            <section>
+                <form action="#" method="">
+                    <i class='fa fa-search icon'></i>
+                    <input type="text" name="search" placeholder="some letters you remmember from the message">
+                </form>
+            </section>
+            <section class="messages-container">
+                <div class="msg">
+                    <i class="fa fa-star faved"></i>
+                    <p>Hi Ahmed, How are you ?!</p>
+                    <span>5</span>
+                </div>
+                <div class="msg">
+                    <i class="fa fa-star"></i>
+                    <p>Hi Ahmed, How are you ?!</p>
+                    <span>4</span>
+                </div>
+                <div class="msg">
+                    <i class="fa fa-star faved"></i>
+                    <p>ازيك يا احمد</p>
+                    <span>3</span>
+                </div>
+                <div class="msg">
+                    <i class="fa fa-star"></i>
+                    <p>Hi Ahmed, How are you ?!</p>
+                    <span>2</span>
+                </div>
+                <div class="msg">
+                    <i class="fa fa-star"></i>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit cupiditate natus facere eos eligendi, molestias quo, quibusdam quam eaque perferendis consectetur sapiente repellendus quaerat corrupti fuga fugit ea rem nobis!</p>
+                    <span>1</span>
+                </div>
+            </section>
+
+            <section class="fav-messages-container">
+                <div class="msg">
+                    <i class="fa fa-star faved"></i>
+                    <p>Hi Ahmed, How are you ?!</p>
+                    <span>5</span>
+                </div>
+                <div class="msg">
+                    <i class="fa fa-star faved"></i>
+                    <p>ازيك يا احمد</p>
+                    <span>3</span>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <div class="footer-copyright">
+            <div class="by">
+                <span>© 2022 Copyright : Ahmed Saber</span>
+            </div>
+            <div>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="bottom-nav hide-on-large-only">
+        <a class="" href="search.html"><i class="fa fa-search"></i></a>
+        <a class="" href="index.html"><i class="fa fa-home"></i></a>
+        <a class="active" href="profile.html"><i class="fa fa-user"></i></a>
+    </div>
+
+    <button onclick="" class="btn-floating"><i class="fa fa-magic"></i></button>
+</body>
+<script src="./script.js"></script>
+</html>
